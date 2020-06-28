@@ -1,0 +1,8 @@
+# Ignore content built with CMake
+build/
+cmake-*/
+.idea
+.vscode/
+.gitpod.yml
+*.jpg
+*.obj
