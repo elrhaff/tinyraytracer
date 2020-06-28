@@ -2,14 +2,14 @@
 
 Example output:
 
-[![Example result](https://thumbs.gfycat.com/LeafyAstonishingJoey-small.gif)](https://gfycat.com/fr/leafyastonishingjoey)
+[![Example result](https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif)](https://gfycat.com/fr/leafyastonishingjoey)
 
-(Background image credit: [P. Horálek](https://www.facebook.com/PetrHoralekPhotography) / ESO)
+(Background credit: [P. Horálek](https://www.facebook.com/PetrHoralekPhotography) / ESO)
 
 This repository is based on the tinyraytracer project https://github.com/ssloy/tinyraytracer/ 
 (see also the homework branch)
 
-The code is adapted so the background image rotates. Stitching the images to get a GIF needs to be done 
+The code is changed so the background image rotates. Stitching the images to get a GIF needs to be done 
 with an external tool.
  
 ### Reproduction steps
@@ -21,8 +21,8 @@ with an external tool.
 in `tinyraytracer.cpp`.
 * The code will generate 200 images by default, which means a full rotation takes around 6 secs, assuming a framerate of 30fps.
 If you want to change it, change the variable `nImages` in `tinyraytracer.cpp`.
-* Create a folder named `output` in the project directory.
-* Run the code after compiling it (see compilation steps). Now `output` should contain the resulting images. 
+* Create a folder named `output/` in the project directory.
+* Run the code after compiling it (see compilation steps). Now `output/` should contain the resulting images. 
 * Generate a gif from your jpeg files: you can either use an online service like this [one](https://gifmaker.me/),
 or use Photoshop following the steps [here](https://www.youtube.com/watch?v=ZLtbtmz2vKo).
 
