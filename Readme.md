@@ -2,9 +2,9 @@
 
 Example output:
 
-[![Example result](https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif | width=100)](https://gfycat.com/fr/leafyastonishingjoey)
+[![Example result](https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif){:height="36px" width="36px"}](https://gfycat.com/fr/leafyastonishingjoey)
 
-(Background credit: [P. Horálek](https://www.facebook.com/PetrHoralekPhotography) / ESO)
+(Background image credit: [P. Horálek](https://www.facebook.com/PetrHoralekPhotography) / ESO)
 
 This repository is based on the tinyraytracer project https://github.com/ssloy/tinyraytracer/ 
 (see also the homework branch)
