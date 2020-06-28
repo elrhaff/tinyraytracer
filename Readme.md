@@ -2,7 +2,7 @@
 
 Example output:
 
-[![Example result](https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif)](https://gfycat.com/fr/leafyastonishingjoey)
+[![Example result](https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif | width=100)](https://gfycat.com/fr/leafyastonishingjoey)
 
 (Background credit: [P. Horálek](https://www.facebook.com/PetrHoralekPhotography) / ESO)
 
