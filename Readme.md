@@ -2,7 +2,8 @@
 
 Example output:
 
-[![Example result](https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif){:height="36px" width="36px"}](https://gfycat.com/fr/leafyastonishingjoey)
+<a href="https://gfycat.com/fr/leafyastonishingjoey"> <img src="https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif" width="480" /> </a>
+
 
 (Background image credit: [P. Horálek](https://www.facebook.com/PetrHoralekPhotography) / ESO)
 
