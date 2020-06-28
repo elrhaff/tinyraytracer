@@ -155,8 +155,8 @@ Vec3f cast_ray(const Vec3f &orig, const Vec3f &dir, const std::vector<Sphere> &s
 }
 
 void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights, const std::vector<Vec3f> &background, const int &step) {
-    const int   width    = 3840;
-    const int   height   = 2160;
+    const int   width    = 720;
+    const int   height   = 480;
 //    const int   width    = 1024;
 //    const int   height   = 768;
     const float fov      = M_PI/3.;
@@ -184,18 +184,18 @@ void render(const std::vector<Sphere> &spheres, const std::vector<Light> &lights
             pixmap[i*3+j] = (unsigned char)(255 * std::max(0.f, std::min(1.f, framebuffer[i][j])));
         }
     }
-    std::string fileName = "../output3/out_" + std::to_string(step) + ".jpg";
+    std::string fileName = "../output/out_" + std::to_string(step) + ".jpg";
     stbi_write_jpg(fileName.c_str(), width, height, 3, pixmap.data(), 100);
 }
 
 int main() {
     int n = -1;
-    unsigned char *pixmap = stbi_load("../potw2019a.jpg", &envmap_width, &envmap_height, &n, 0);
+    unsigned char *pixmap = stbi_load("../360.jpg", &envmap_width, &envmap_height, &n, 0);
     if (!pixmap || 3!=n) {
         std::cerr << "Error: can not load the environment map" << std::endl;
         return -1;
     }
-    envmap = std::vector<Vec3f>(envmap_width*envmap_height);
+    envmap = std::vector<Vec3f>(envmap_width * envmap_height);
     for (int j = envmap_height-1; j>=0 ; j--) {
         for (int i = 0; i<envmap_width; i++) {
             envmap[i+j*envmap_width] = Vec3f(pixmap[(i+j*envmap_width)*3+0], pixmap[(i+j*envmap_width)*3+1], pixmap[(i+j*envmap_width)*3+2])*(1/255.);
