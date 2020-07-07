@@ -16,7 +16,6 @@ std::vector<Vec3f> envmap;
 //Model duck("../duck.obj");
 constexpr int nImages = 200;
 
-
 struct Material {
     Material(const float r, const Vec4f &a, const Vec3f &color, const float spec) : refractive_index(r), albedo(a), diffuse_color(color), specular_exponent(spec) {}
     Material() : refractive_index(1), albedo(1,0,0,0), diffuse_color(), specular_exponent() {}
@@ -119,16 +118,13 @@ Vec3f cast_ray(const Vec3f &orig, const Vec3f &dir, const std::vector<Sphere> &s
     Material material;
 
     if (depth> 10 || !scene_intersect(orig, dir, spheres, point, N, material)) {
-        // background
-        // int x_raw = (dir.x/2 + 0.5) * envmap_width;
-        // int y_raw = -(dir.y/2 + 0.5) * envmap_height;
+        // background (spherical coord)
         int x_raw = ((int) ((atan2(dir.z, dir.x) / (2 * M_PI) + 0.5) * envmap_width) + (int) (theta * 1.f * envmap_width / (2 * M_PI))) % envmap_width;
         int y_raw = (int) (acos(dir.y) / M_PI * envmap_height);
         int x = std::max(0, std::min(x_raw, envmap_width -1));
         int y = std::max(0, std::min(y_raw, envmap_height -1));
         return background[x + y * envmap_width];
 }
-
 
     Vec3f reflect_dir = reflect(dir, N).normalize();
     Vec3f refract_dir = refract(dir, N, material.refractive_index).normalize();

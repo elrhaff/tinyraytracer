@@ -2,7 +2,7 @@
 
 Example output:
 
-<a href="https://gfycat.com/fr/leafyastonishingjoey"> <img src="https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif" width="480" /> </a>
+<a href="https://gfycat.com/fr/leafyastonishingjoey"> <img src="https://thumbs.gfycat.com/LeafyAstonishingJoey-size_restricted.gif" width="720" /> </a>
 
 
 (Background image credit: [P. Horálek](https://www.facebook.com/PetrHoralekPhotography) / ESO)
